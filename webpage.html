@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping site in India</title>
+    <link rel="icon" href="img/amz1.jpg" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        font-family: Arial;
+        border: border-box;
+      }
+      body {
+        background-color: azure;
+      }
+      .container {
+        max-width: 1400px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      .border:hover {
+        border: 2px solid white;
+      }
+      .navbar {
+        height: 70px;
+        background-color: #0f1111;
+        color: white;
+        /* padding-top: 3px; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      select{
+        width: 50px;
+        height: 35px;
+      }
+      #div{
+        height: 40px;
+        display: flex;
+      }
+      .logo img {
+        padding: 10px;
+        height: 30px;
+        width: 70%;
+        border: 2px solid rgb(18, 23, 19);
+        justify-content: center;
+        align-items: center;
+      }
+      #all {
+        height: 35px;
+        width: 50px;
+        margin-left: 30px;
+      }
+      #sch {
+        height: 35px;
+        width: 20rem;
+      }
+
+      #sch1 .fa {
+        font-size: 20px;
+        height: 30px;
+        width: 40px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        text-align: center;
+        padding-top: 6px;
+        background-color: rgba(251, 195, 29, 0.804);
+      }
+      .hello {
+        display: flex;
+        width: 120px;
+      }
+      .signn{
+        display: none;
+        position: absolute;
+        border: 2px solid orange;
+        height: 140px;
+        width: 180px;
+        padding: 5px;
+        padding-left: 15px;
+        background-color: aliceblue;
+      
+      }
+ 
+      .signn input{
+        background-color: rgb(249, 189, 79);
+        width: 120px;
+        height: 40px;
+        border: 2px solid rgb(239, 175, 55);
+        border-radius: 4px;
+        margin: 25px;
+      }
+      .hello:hover + .signn{ 
+        display: block;
+      }  
+      .signn:hover{
+        display: block;
+      } 
+      .extra {
+        display: flex;
+        margin: 20px;
+      }
+      #cart {
+        display: flex;
+        font-size: 20px;
+        margin: 70px;
+      }
+     
+      .cols {
+        height: 15rem;
+        width: 12rem;
+        padding: 10px;
+      }
+      .cols img{
+        height: 100%;
+        width: 100%;
+      }
+      .row2 {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+      }
+      .bigcol {
+        height: 350px;
+        width: 30%;
+        display: flex;
+        background-color: 2px solid rgb(222, 174, 115);
+      }
+      .colm {
+        background-color: 2px solid purple;
+        height: 40px;
+        width: 10%;
+      }
+      /* ---------------small 4-4 box------------ */
+      .row3 {
+        height: auto;
+        width: 100%;
+      }
+      .col3 {
+        height: auto;
+        width: 33%;
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .sbox {
+        height: 10rem;
+        width: 10rem;
+        margin: 5px;
+        text-align: center;
+      }
+      .sbox img{
+        height: 80%;
+        width: 80%;
+      }
+      .rowx {
+        height: 300px;
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      .rowx img {
+        height: 100%;
+        width: 100%;
+      }
+      #cd{
+        width: 100%;
+      }
+      a{
+        text-decoration: none;
+      }
+    
+
+      /* <!-- --------------------FOOTER------------------------ --> */
+      #fbtn {
+        border: 2px solid rgb(244, 170, 33);
+        color: rgb(245, 172, 38);
+        font-size: 10px;
+      }
+      .recom {
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* <!-- --------------------Media Query ------------------------ --> */
+
+      @media only screen and (max-width: 600px){
+        .rowx{
+          align-items: center;
+          justify-content: center;
+        }
+        
+      @media only screen and (max-width: 400px){
+        .rowx, .row2, .row3{
+          align-items: center;
+          
+        }
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <!--------------- header--------- -->
+      <header>
+        <div class="navbar">
+          <div class="logo"><img src="img/amzlogo.png" /></div>
+
+          <div class="navadd">
+            <p>Hello</p>
+            <i class="fa fa-map-marker"></i>
+            <p>Select your address</p>
+          </div>
+          <div id="div">
+            <select>
+              <option>ALL</option>
+              <option>Alexa Skills</option>
+              <option>Amazon Devices</option>
+              <option>Appliances</option>
+              <option>Apps & Games</option>
+              <option>Baby</option>
+              <option>Beauty</option>
+              <option>Books</option>
+              <option>Clothing</option>
+              <option>Computer</option>
+              <option>Electronic</option>
+              <option>Furniture</option>
+              <option>Gardening</option>
+              <option>Gift Cards</option>
+              <option>Grocery</option>
+              <option>Health</option>
+            </select>
+  
+            <input type="search" placeholder="Search Amazon.in" id="sch" />
+            <div id="sch1">
+              <i class="fa fa-search"></i>
+            </div>
+          </div>
+         <div>
+          <div class="hello">Hello, sign in Account & Lists</div>
+          <div class="signn">
+            <a href="signIn.html"><input type="button" value="Sign in"></a>
+            <p style="font-size: smaller; color: blue;">New Customer?<a href="#">Start here.</a></p>
+          </div>
+        </div>
+
+        <div><p>Contact</p></div>
+
+          <div class="extra">
+            <p>
+              Returns<br />
+              &Orders
+            </p>
+          </div>
+          <div id="cart">
+            <i class="fa fa-shopping-cart"></i>
+            <p>&nbsp;Cart</p>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="rowx">
+          <img src="img/nn.jpg" />
+        </div>
+        <div><h2>Explore new collections from stores near you</h2></div>
+
+        <div class="row2">
+          <div class="cols">
+            <img src="img/t1.jpg" />
+          </div>
+          <div class="cols">
+            <img src="img/t2.jpg" />
+          </div>
+          <div class="cols">
+            <img src="img/t3.jpg" />
+          </div>
+          <div class="cols">
+            <img src="img/t5.jpg" />
+          </div>
+          <div class="cols">
+            <img src="img/t6.jpg" />
+          </div>
+          <div class="cols">
+            <img src="img/t4.jpg" />
+          </div>
+        </div>
+
+        <div class="row3">
+          <div class="col3">
+            <div id="cd">
+              <h2>Bestsellers in Women's <br />Indian Clothing</h2>
+            </div>
+              <div class="sbox"><img src="img/s1.jpg" /> Clothing</div>
+              <div class="sbox"><img src="img/s2.jpg" /> Sandals & Bags</div>
+              <div class="sbox"><img src="img/s3.jpg" /> Watch</div>
+              <div class="sbox"><img src="img/s4.jpg" /> Jwellery</div>
+            </div>
+
+          <div class="col3">
+            <div id="cd"><h2>More items to consider</h2></div>
+            <div class="sbox">
+              <img src="img/h1.jpg" /> <br />boAt Rockerz<br />$1,199
+            </div>
+            <div class="sbox">
+              <img src="img/h2.jpg" /><br />Boult Audio<br />$1,199
+            </div>
+            <div class="sbox">
+              <img src="img/h3.jpg" /> <br />Philips Audio<br />$1,499
+            </div>
+            <div class="sbox">
+              <img src="img/h4.jpg" /> <br />Hammer Bash<br />$1,199
+            </div>
+          </div>
+
+          <div class="col3">
+            <div id="cd"><h2>Under ₹499 | Pocket-friendly fashion</h2></div>
+            <div class="sbox"><img src="img/w1.jpg" /> Clothing</div>
+            <div class="sbox"><img src="img/w2.jpg" /> Backpacks</div>
+            <div class="sbox"><img src="img/w3.jpg" /> Footwear</div>
+            <div class="sbox"><img src="img/w4.jpg" /> View all</div>
+          </div>
+        </div>
+
+        
+        
+        <div class="row2">
+          <div class="cols">
+            <img src="img/z1.jpg" />
+          </div>
+          <div class="cols">
+            <img src="img/z2.jpg" />
+          </div>
+          <div class="cols">
+            <img src="img/z3.jpg" />
+          </div>
+          <div class="cols">
+            <img src="img/z5.jpg" />
+          </div>
+          <div class="cols">
+            <img src="img/z4.jpg" />
+          </div>
+          <div class="cols">
+            <img src="img/z4.jpg" />
+          </div>
+        </div>
+
+        <div class="rowx">
+          <img src="img/rowx2.jpg" />
+        </div>
+
+      
+      <!-- --------------------FOOTER------------------------ -->
+      <footer>
+        <hr />
+        <div class="recom">
+          <p>See personalized recommendations</p>
+          <input type="button" value="Sign in" id="fbtn" />
+          <p>New Customer?<a>Start here.</a></p>
+        </div>
+        <hr />
+      </footer>
+      <!-- --------------------FOOTER------------------------ -->
+    </div>
+  </body>
+</html>
