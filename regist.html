@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Registration</title>
+    <link rel="icon" href="img/amz1.jpg" type="image/png" />
+    <style>
+      * {
+        margin: 0;
+        font-family: Arial;
+        border: border-box;
+      }
+      body {
+        background-color: white;
+      }
+      .container {
+        max-width: 1400px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 30px;
+      }
+      .form {
+        padding-top: 10px;
+        padding-left: 35px;
+        padding-right: 20px;
+        display: block;
+        border-radius: 4px;
+        border: 2px solid rgb(218, 216, 216);
+        height: 650px;
+        width: 320px;
+        margin-left: 470px;
+        /* line-height: 40px; */
+      }
+      #in {
+        margin-top: 6px;
+        margin-bottom: 14px;
+        width: 280px;
+        height: 25px;
+      }
+      #con {
+        width: 310px;
+        height: 40px;
+        border: 1px solid rgb(253, 211, 133);
+        border-radius: 4px;
+        background-color: rgb(253, 211, 133);
+        color: rgb(57, 55, 55);
+        font-size: 15px;
+      }
+      .low {
+        height: 50px;
+        width: 420px;
+        /* border: 1px solid grey; */
+        display: flex;
+        padding: 10px;
+        padding-left: 20px;
+        margin-left: 500px;
+      }
+      .col {
+        font-size: smaller;
+        padding: 20px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .logo {
+        height: 100px;
+        width: 400px;
+        margin-left: 221px;
+      }
+      .logo img{
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"><img src="img/jj.png" class="logo" /></div>
+      <form class="form">
+        <h2>Create Account</h2>
+        <br />
+        <label>Your name</label><br />
+        <input type="text" placeholder="First and last name" id="in" /><br />
+        <label>Mobile number</label><br />
+        <input type="number" placeholder="Mobile number" id="in" /><br />
+        <label>Email(optional)</label><br />
+        <input type="email" id="in" /><br />
+        <label>Password</label><br />
+        <input type="password" placeholder="At least 6 characters" id="in" />
+        <p style="font-size: smaller">
+          Passwords must be at least 6 characters.
+        </p>
+        <br />
+        <p style="font-size: smaller">
+          By enrolling your mobile phone number, you consent to receive
+          automated security notifications via text message from Amazon. Message
+          and data rates may apply.
+        </p>
+        <br />
+        <input type="button" value="Continue" id="con" />
+        <br />
+        <hr style="margin-top: 20px; margin-bottom: 20px" />
+
+        <p style="font-size: smaller; line-height: 20px">
+          Already have an account? <a href="#">Sign in</a> Buying for work?
+          <a href="#">Create a free business account</a> <br /><br />
+          By creating an account or logging in, you agree to Amazons
+          <a href="#">Conditions of Use</a> and
+          <a href="#">Privacy Policy.</a>
+        </p>
+      </form>
+    </div>
+    <footer>
+      <div class="low">
+        <div class="col"><a href="#">Conditions of Use</a></div>
+        <div class="col"><a href="#"> Privacy Notice</a></div>
+        <div class="col"><a href="#">Help </a></div>
+      </div>
+    </footer>
+  </body>
+</html>
