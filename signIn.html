@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Sign in</title>
+    <link rel="icon" href="img/amz1.jpg" type="image/png" />
+    <style>
+      * {
+        margin: 0;
+        font-family: Arial;
+        border: border-box;
+      }
+      body {
+        background-color:white;
+      }
+      .container {
+        max-width: 1400px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 30px;
+      }
+      .logo {
+        height: 100px;
+        width: 400px;
+        /* border: 2px solid rgb(227, 227, 235); */
+        margin-left: 221px;
+      }
+      .logo img{
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .box {
+        border-radius: 5px;
+        display: block;
+        border: 2px solid rgb(233, 233, 236);
+        height: 330px;
+        width: 400px;
+        margin-left: 450px;
+        padding-left: 40px;
+        padding-top: 25px;
+        box-sizing: border-box;
+        background-color: aliceblue;
+      }
+      .box #mail {
+        width: 280px;
+        font-size: 20px;
+        border-radius: 4px;
+      }
+      .box #con {
+        width: 290px;
+        height: 40px;
+        border: 1px solid rgb(253, 211, 133);
+        border-radius: 4px;
+        background-color: rgb(253, 211, 133);
+        color: rgb(57, 55, 55);
+        font-size: 15px;
+      }
+    
+      #new {
+        margin-left: 550px;
+        border: transparent;
+        height: 30px;
+        width: 200px;
+        background-color:white;
+        /* border: 1px solid rgb(216, 59, 59); */
+      }
+      #you{
+       margin-left: 450px;
+       width: 400px;
+       height: 30px;
+       border-radius: 5px;
+       border: 1px solid grey;
+       background-color: rgb(247, 244, 244);
+      }
+      .low{
+         height: 50px;
+         width: 500px;
+         /* border: 1px solid grey; */
+         display: flex;
+         padding: 10px;
+         padding-left: 35px;
+         margin-left: 500px;
+      }
+      .col{
+        font-size: smaller;
+        padding: 20px;
+      }
+      a{
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"><img src="img/jj.png"  class="logo"></div>
+      <div class="box">
+        <form>
+          <h2 style="color: rgb(42, 27, 27)">Sign in</h2>
+          <br />
+          <h4 style="color: rgb(42, 27, 27)">Email or mobile phone number</h4>
+          <input type="email" id="mail" /><br /><br />
+          <input type="button" value="Continue" id="con" />
+        </form>
+        <br />
+        <p style="font-size: 12px">
+          By continuing, you agree to Amazon's
+          <a href="#">Conditions of Use</a> <br />
+          and
+          <a href="#">Privacy Notice</a><br /><br />
+          <a href="#">Need help?</a>
+        </p>
+      </div>
+      <br>
+        <input type="button" value="New to Amazon?" id="new" />
+        <hr /> <br />
+        <a href="regist.html"><input type="button" id="you" value="Create your Amazon account" /></a>
+      </div>
+      <footer>
+        <div class="low">
+            <div class="col"><a href="#">Conditions of Use</a></div> 
+            <div class="col"><a href="#"> Privacy Notice</a></div>
+            <div class="col"> <a href="#">Help </a></div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
